@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col my-5">
+            <h1>Upload Video</h1>
+            <hr />
+            <form method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label>Select Video</label>
+                    <!-- <div class="custom-file">
+                        <input type="file" name="image" id="image" class="custom-file-input">
+                        <label for="image" class="custom-file-label">Select Image...</label>
+                    </div> -->
+                    <div class="input-group mb-3">
+                        <!-- <button class="btn btn-outline-secondary" type="button"
+                            id="inputGroupFileAddon03">Button</button> -->
+                        <input type="file" class="form-control" id="video" name="video" />
+                        <!-- <label for="image" class="custom-file-label">Select Image...</label> -->
+                    </div>
+                    <div>
+                        <button class="btn btn-primary" type="submit">
+                            Upload
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

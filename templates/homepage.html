@@ -1,0 +1,126 @@
+{% extends "base_home.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="mt-5">
+        <div class="text-center">
+            <h2>Select what you want to do:</h2>
+        </div>
+        <div class="row my-5 bg-primary rounded">
+            <div class="col-md-6">
+                <div class="card my-3 shadow bg-white text-dark">
+                    <div class="card-body">
+                        <h5 class="card-title">Object Detection</h5>
+                        <p class="card-text">
+                            Object detection is a computer vision
+                            technique that allows us to identify and
+                            locate objects in an image or video. With
+                            this kind of identification and
+                            localization, object detection can be used
+                            to count objects in a scene and determine
+                            and track their precise locations, all while
+                            accurately labeling them.
+                        </p>
+
+                        <div class="col-md-6">
+                            <p>Select Object Detection Method</p>
+                        </div>
+
+                        <div>
+                            <form method="POST">
+                                <div class="row g-2">
+                                    <div class="col-md-6">
+                                        <select name="od-method" class="form-select"
+                                            aria-label="Default select example">
+                                            <option selected value="video">
+                                                Video
+                                            </option>
+                                            
+                                            <option value="image">
+                                                Image
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <!-- <a href="/object-detection-options" class="btn btn-primary">
+                                                Go
+                                            </a> -->
+                                        <form method="POST">
+                                            <button type="submit" class="
+                                                        btn btn-primary
+                                                        mb-2
+                                                    " name="choice" value="od">
+                                                Go
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VQA -->
+            <div class="col-md-6">
+                <div class="card my-3 shadow bg-white text-dark">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Visual Question Answering
+                        </h5>
+                        <p class="card-text">
+                            The Visual Question Answering (VQA) task
+                            combines challenges for processing data with
+                            both Visual and Linguistic processing, to
+                            answer basic `common sense' questions about
+                            given images. Given an image and a question
+                            in natural language, the VQA system tries to
+                            find the correct answer to it.
+                        </p>
+                        <div class="col-md-6">
+                            <p>Select VQA Method</p>
+                        </div>
+                        <div>
+                            <form method="POST">
+                                <div class="row g-2">
+                                    <div class="col-md-6">
+                                        <select class="form-select" name="vqa-method"
+                                            aria-label="Default select example">
+                                            <option selected value="upload">
+                                                Upload Image
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <!-- <a href="/object-detection-options" class="btn btn-primary">
+                                        Go
+                                    </a> -->
+
+                                        <button type="submit" class="
+                                                        btn btn-primary
+                                                        mb-2
+                                                    " name="choice" value="vqa">
+                                            Go
+                                        </button>
+
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+    </div>
+</div>
+
+<!-- Scripts -->
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+<script src="../static/js/bootstrap.js"></script>
+{% endblock %}

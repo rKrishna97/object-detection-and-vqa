@@ -1,0 +1,17 @@
+{% extends "vqa_page.html" %}
+
+{% block answer %}
+<div class="col-xl-12 ">
+    
+    <!-- Main Answer -->
+    <div>
+        <h2></h2>
+        <p class="h1">The Question is:
+            <small class="text-muted">{{ question }}?</small>
+        </p>
+        <p class="h2"> Answer:
+            <small class="text-success h1">{{ ans }}</small>
+        </p>
+    </div>
+</div>
+{% endblock %}

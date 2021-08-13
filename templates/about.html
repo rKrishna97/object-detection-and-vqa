@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    <title>Document</title>
+</head>
+
+<body class="bg-light">
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <div class="container">
+            <a href="/" class="navbar-brand">BlindVision</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <!-- <li class="nav-item show active">
+                        <a href="#object-detection" class="nav-link">Object Detection</a>
+                    </li> -->
+                    <!-- <li class="nav-item show active">
+                        <a href="#vqa" class="nav-link">VQA</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a href="#vqa" class="nav-link">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Nav Bar Ends -->
+
+    <main>
+
+        <!-- =======================
+        Inner intro START -->
+        <section class="pt-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card bg-dark-overlay-4 overflow-hidden card-bg-scale h-400 text-center"
+                            style="background-image:url(../assets/image/pexels-photo-373543.jpeg); background-position: center left; background-size: cover;">
+                            <!-- Card Image overlay -->
+                            <div class="card-img-overlay d-flex align-items-center p-3 p-sm-4">
+                                <div class="w-100 my-auto">
+                                    <h1 class="text-white display-4">About us</h1>
+                                    <!-- breadcrumb -->
+                                    <nav class="d-flex justify-content-center" aria-label="breadcrumb">
+                                        <ol class="breadcrumb breadcrumb-dark breadcrumb-dots mb-0">
+                                            <li class="breadcrumb-item"><a href="index.html"><i
+                                                        class="bi bi-house me-1"></i> Home</a></li>
+                                            <li class="breadcrumb-item active">About us</li>
+                                        </ol>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =======================
+        Inner intro END -->
+
+        <!-- =======================
+        About START -->
+        <section class="pt-4 pb-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-9 mx-auto">
+                        <h2>App Features</h2>
+                        <p class="lead">
+                            Object Detection and Visual Question Answering
+                        </p>
+                        <h3>Object Detection</h3>
+                        <p>Object detection is a computer vision
+                            technique that allows us to identify and
+                            locate objects in an image or video. With
+                            this kind of identification and
+                            localization, object detection can be used
+                            to count objects in a scene and determine
+                            and track their precise locations, all while
+                            accurately labeling them.</p>
+                        <h5 class="mt-4">Models Used</h5>
+                        <p class="lead">
+                            We tried multiple Object Detection models like Yolov3, Yolov4, Yolov5, Detectron2 and SSD.
+                            After testing these models we decided to go with Yolov4 and Yolov4-tiny for it's performance
+                            and speed.
+                        </p>
+                        <ul>
+                            <li>For object detection on image we used Yolov4 model trained on COCO dataset and custom
+                                dataset</li>
+                            <li>For object detection on video we used Yolov4-tiny model trained on COCO dataset and
+                                custom dataset. Compared to Yolov4, Yolov4-tiny is much faster on video with good
+                                detection.</li>
+
+                        </ul>
+
+                        <h3>Visual Question Answering</h3>
+                        <p>The Visual Question Answering (VQA) task
+                            combines challenges for processing data with
+                            both Visual and Linguistic processing, to
+                            answer basic `common sense' questions about
+                            given images. Given an image and a question
+                            in natural language, the VQA system tries to
+                            find the correct answer to it.</p>
+                        <h5 class="mt-4">Models Used</h5>
+                        <p class="lead">
+                            We trained Visual Questioning Answering model on COCO Image Dataset and their Annotations
+                        </p>
+                        <ul>
+                            <li>We trained the model by training custom CNN model on COCO images and we used LSTM for
+                                the questions extracted from the annotations</li>
+                            <li>Then we combined both of this model to get out final VQA model</li>
+
+                        </ul>
+                        <!-- Team START -->
+                        <h3 class="mb-3 mt-5">Our team</h3>
+                        <div class="row g-4">
+                            <!-- Team item-->
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="text-center">
+                                    <!-- Avatar img -->
+                                    <!-- <div class="avatar avatar-xxl mb-2">
+                                        <img class="avatar-img rounded-circle" src="assets/images/avatar/04.jpg"
+                                            alt="avatar">
+                                    </div> -->
+                                    <h5>Krishna R</h5>
+                                    <p class="m-0">Intern</p>
+                                    <ul class="nav justify-content-center">
+                                        <li class="nav-item">
+                                            <a class="nav-link px-2 fs-5" href="#"><i
+                                                    class="fab fa-facebook-square"></i></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link px-2 fs-5" href="#"><i
+                                                    class="fab fa-twitter-square"></i></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link px-2 fs-5" href="#"><i class="far fa-envelope"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Team item-->
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="text-center">
+                                    <!-- Avatar img -->
+                                    <!-- <div class="avatar avatar-xxl mb-2">
+                                        <img class="avatar-img rounded-circle" src="assets/images/avatar/14.jpg"
+                                            alt="avatar">
+                                    </div> -->
+                                    <h5>Md Aamir Iqbal</h5>
+                                    <p class="m-0">Intern</p>
+                                    <ul class="nav justify-content-center">
+                                        <li class="nav-item">
+                                            <a class="nav-link px-2 fs-5" href="#"><i class="far fa-envelope"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Team item-->
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="text-center">
+                                    <!-- Avatar img -->
+                                    <!-- <div class="avatar avatar-xxl mb-2">
+                                        <img class="avatar-img rounded-circle" src="assets/images/avatar/09.jpg"
+                                            alt="avatar">
+                                    </div> -->
+                                    <h5>Ashutosh Kumbhare</h5>
+                                    <p class="m-0">Intern</p>
+                                    <ul class="nav justify-content-center">
+                                        <li class="nav-item">
+                                            <a class="nav-link px-2 fs-5" href="#"><i
+                                                    class="fab fa-twitter-square"></i></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link px-2 fs-5" href="#"><i class="far fa-envelope"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Team item-->
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="text-center">
+                                    <!-- Avatar img -->
+                                    <!-- <div class="avatar avatar-xxl mb-2">
+                                        <img class="avatar-img rounded-circle" src="assets/images/avatar/10.jpg"
+                                            alt="avatar">
+                                    </div> -->
+                                    <h5>Harsh Shah</h5>
+                                    <p class="m-0">Intern</p>
+                                    <ul class="nav justify-content-center">
+                                        <li class="nav-item">
+                                            <a class="nav-link px-2 fs-5" href="#"><i
+                                                    class="fab fa-facebook-square"></i></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link px-2 fs-5" href="#"><i class="far fa-envelope"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        
+                        
+                            <!-- Team item-->
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="text-center">
+                                    <!-- Avatar img -->
+                                    <!-- <div class="avatar avatar-xxl mb-2">
+                                        <img class="avatar-img rounded-circle" src="assets/images/avatar/04.jpg"
+                                            alt="avatar">
+                                    </div> -->
+                                    <h5>Rakesh B R</h5>
+                                    <p class="m-0">Intern</p>
+                                    <ul class="nav justify-content-center">
+                                        <li class="nav-item">
+                                            <a class="nav-link px-2 fs-5" href="#"><i
+                                                    class="fab fa-facebook-square"></i></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link px-2 fs-5" href="#"><i
+                                                    class="fab fa-twitter-square"></i></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link px-2 fs-5" href="#"><i class="far fa-envelope"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                                <!-- Team item-->
+                                <div class="col-sm-6 col-lg-3">
+                                    <div class="text-center">
+                                        <!-- Avatar img -->
+                                        <!-- <div class="avatar avatar-xxl mb-2">
+                                        <img class="avatar-img rounded-circle" src="assets/images/avatar/04.jpg"
+                                            alt="avatar">
+                                    </div> -->
+                                        <h5>Abhishek Sharma</h5>
+                                        <p class="m-0">Intern</p>
+                                        <ul class="nav justify-content-center">
+                                            <li class="nav-item">
+                                                <a class="nav-link px-2 fs-5" href="#"><i
+                                                        class="fab fa-facebook-square"></i></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link px-2 fs-5" href="#"><i
+                                                        class="fab fa-twitter-square"></i></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link px-2 fs-5" href="#"><i
+                                                        class="far fa-envelope"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-lg-3">
+                                    <div class="text-center">
+                                        <!-- Avatar img -->
+                                        <!-- <div class="avatar avatar-xxl mb-2">
+                                        <img class="avatar-img rounded-circle" src="assets/images/avatar/09.jpg"
+                                            alt="avatar">
+                                    </div> -->
+                                        <h5>Jagadeesh K</h5>
+                                        <p class="m-0">Intern</p>
+                                        <ul class="nav justify-content-center">
+                                            <li class="nav-item">
+                                                <a class="nav-link px-2 fs-5" href="#"><i
+                                                        class="fab fa-twitter-square"></i></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link px-2 fs-5" href="#"><i
+                                                        class="far fa-envelope"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Team item-->
+                                <div class="col-sm-6 col-lg-3">
+                                    <div class="text-center">
+                                        <!-- Avatar img -->
+                                        <!-- <div class="avatar avatar-xxl mb-2">
+                                        <img class="avatar-img rounded-circle" src="assets/images/avatar/10.jpg"
+                                            alt="avatar">
+                                    </div> -->
+                                        <h5>Jayakrishna Mohapatra</h5>
+                                        <p class="m-0">Intern</p>
+                                        <ul class="nav justify-content-center">
+                                            <li class="nav-item">
+                                                <a class="nav-link px-2 fs-5" href="#"><i
+                                                        class="fab fa-facebook-square"></i></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link px-2 fs-5" href="#"><i
+                                                        class="far fa-envelope"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                        
+                            <!-- Team END -->
+                            <br>
+                            <br>
+                        
+                    </div>
+                </div>
+        </section>
+        <!-- =======================
+        About END -->
+
+    </main>
+
+
+
+    <!-- Scripts -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="../static/js/bootstrap.js"></script>
+
+    <!-- Scripts End -->
+</body>
+
+</html>
